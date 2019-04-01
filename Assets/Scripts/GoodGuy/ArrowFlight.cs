@@ -32,16 +32,34 @@ public class ArrowFlight : MonoBehaviour {
             //gameObject.transform.rotation = Quaternion.Euler( new Vector3(gameObject.transform.rotation.x,gameObject.transform.rotation.y, rotationholder));
             alive = false;
         }
-        
+        if (collision.collider.CompareTag("Player")&&!alive)
+        {
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows++;
+            Destroy(gameObject.gameObject);
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print(collision.tag);
+  //      print(collision.tag);
         if (collision.tag == "Player")
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows++;
             Destroy(gameObject.gameObject);
         }   
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+//        print(collision.tag);
+        if (!alive)
+        {
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+            //Physics2D.IgnoreCollision(arrow.GetComponent<Collider2D>(), player.GetComponent<Collider2D>(),false);
+            //gameObject.transform.rotation = Quaternion.Euler( new Vector3(gameObject.transform.rotation.x,gameObject.transform.rotation.y, rotationholder));
+           // alive = true;
+
+        }
     }
 
 }

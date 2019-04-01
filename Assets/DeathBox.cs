@@ -16,6 +16,13 @@ public class DeathBox : MonoBehaviour {
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health = 0;
+        if (collision.collider.tag == "Player")
+        {
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health = 0;
+        }
+        else
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
