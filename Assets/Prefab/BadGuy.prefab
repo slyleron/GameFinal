@@ -92,7 +92,7 @@ GameObject:
   m_Layer: 0
   m_Name: GroundChecker
   m_TagString: Untagged
-  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1016839553062952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9282765, y: 0.93646455, z: 122.03189}
+  m_LocalPosition: {x: -7.097, y: 0.93646455, z: 122.03189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4342875471494236}
@@ -261,9 +261,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.64018285}
+  m_Offset: {x: -0.0059913397, y: -0.44785392}
   serializedVersion: 2
-  m_Radius: 0.10870576
+  m_Radius: 0.29504335
 --- !u!61 &61140550665952332
 BoxCollider2D:
   m_ObjectHideFlags: 1

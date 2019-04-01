@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Playercontroller : MonoBehaviour {
     public float jumphight, moveSpeed, moveSlow,duckDistance;
@@ -9,6 +10,7 @@ public class Playercontroller : MonoBehaviour {
     public GameObject healthbar, otherhealhtbar;
     private float power, healthbarMaxSize, originalhealthbar;
     public float poweruprate;
+    
     // Use this for initialization
     void Start () {
         PlayerPrefs.SetFloat("lastCheckpointX", 0);
@@ -27,7 +29,7 @@ public class Playercontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.W)&&jump)
+        if (Input.GetKey(KeyCode.W)&&jump|| Input.GetKey(KeyCode.Space) && jump)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x, gameObject.GetComponent<Rigidbody2D>().velocity.y+jumphight);
             jump = false;
@@ -50,7 +52,7 @@ public class Playercontroller : MonoBehaviour {
         //arrowpower
         if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows > 0)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0)&&jump)
             {
 
 
@@ -63,7 +65,7 @@ public class Playercontroller : MonoBehaviour {
             }
 
             //releaseMouseAndFire
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0)&&jump)
             {
 
                 //Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
@@ -101,12 +103,13 @@ public class Playercontroller : MonoBehaviour {
     {
         if (collision.tag == "Checkpoint")
         {
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold += Random.Range(10, 50);
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold += Random.Range(GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().level, 50+ GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().level);
             GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().GroundMakerScript();
             GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().level++;
             PlayerPrefs.SetFloat("lastCheckpointX", gameObject.transform.position.x);
             PlayerPrefs.SetFloat("lastCheckpointY", gameObject.transform.position.y);
             PlayerPrefs.SetFloat("lastCheckpointZ", gameObject.transform.position.z);
+            GameObject.Find("LevelText").GetComponent < Text >().text= GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().level.ToString();
             Destroy(collision.gameObject);
         }
     }

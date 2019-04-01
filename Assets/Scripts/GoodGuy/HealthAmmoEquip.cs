@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class HealthAmmoEquip : MonoBehaviour {
     public int health, arrows, mana, gold;
     public GameObject healthbar, healthbarMax;
+    public ParticleSystem spawnParticles, deathparticles;
     public Text goldText,arrowText;
     public float healthMath;
+    private bool whichParticle;
 	// Use this for initialization
 	void Start () {
         
@@ -32,6 +34,10 @@ public class HealthAmmoEquip : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>().isTrigger = true;
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().isKinematic = true;
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+            if (whichParticle)
+            {
+
+            }
             if (GameObject.FindGameObjectWithTag("Player").transform.position.x < PlayerPrefs.GetFloat("lastCheckpointX") + 1f&& GameObject.FindGameObjectWithTag("Player").transform.position.x > PlayerPrefs.GetFloat("lastCheckpointX")-1&& GameObject.FindGameObjectWithTag("Player").transform.position.y > PlayerPrefs.GetFloat("lastCheckpointY"))
             {
                 health = 100;
@@ -43,6 +49,9 @@ public class HealthAmmoEquip : MonoBehaviour {
                 else gold = 0;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>().isTrigger = false;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().isKinematic = false;
+                ParticleSystem particles=Instantiate(spawnParticles);
+                particles.Play(true);
+                whichParticle = true;
             }
         }
 

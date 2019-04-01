@@ -10,10 +10,24 @@ public class BuyScript : MonoBehaviour,IPointerDownHandler {
         if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold > 10)
         {
             switch (gameObject.name)
+            {
                 case "arrows":
                     GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows += 10;
                     GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold -= 10;
-                break;
+                    break;
+                case "arrowsale":
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows -= 10;
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold += 10;
+                    break;
+                case "health":
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health += 10;
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold -= 10;
+                    break;
+                case "healthtogold":
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health -= 10;
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().gold += 10;
+                    break;
+            }
         }
     }
     
