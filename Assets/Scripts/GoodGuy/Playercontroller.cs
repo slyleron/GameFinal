@@ -13,6 +13,7 @@ public class Playercontroller : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
+
         PlayerPrefs.SetFloat("lastCheckpointX", 0);
         PlayerPrefs.SetFloat("lastCheckpointY", 2);
         PlayerPrefs.SetFloat("lastCheckpointZ", 122);
