@@ -18,8 +18,8 @@ public class Playercontroller : MonoBehaviour {
         PlayerPrefs.SetFloat("lastCheckpointY", 2);
         PlayerPrefs.SetFloat("lastCheckpointZ", 122);
         healthbarMaxSize = .3828125f;
-        power = 0;
-        poweruprate = 0.2f;
+        power = 0f;
+        poweruprate = 0.3f;
         originalhealthbar = healthbar.GetComponent<RectTransform>().offsetMax.x;
         jumphight = 5;
         moveSpeed = 2f;
@@ -53,7 +53,7 @@ public class Playercontroller : MonoBehaviour {
         //arrowpower
         if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows > 0)
         {
-            if (Input.GetMouseButton(0)&&jump)
+            if (Input.GetMouseButton(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health > 0)
             {
 
 
@@ -66,7 +66,7 @@ public class Playercontroller : MonoBehaviour {
             }
 
             //releaseMouseAndFire
-            if (Input.GetMouseButtonUp(0)&&jump)
+            if (Input.GetMouseButtonUp(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health>0)
             {
 
                 //Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
@@ -75,12 +75,12 @@ public class Playercontroller : MonoBehaviour {
                 Physics2D.IgnoreCollision(flybulletfly.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
                 flybulletfly.transform.LookAt(mouse.transform.localPosition);
                 flybulletfly.transform.position = new Vector3(bow.transform.position.x, bow.transform.position.y, bow.transform.position.z);
-                print(bow.transform.position.x);
+                //print(bow.transform.position.x);
+                if (power < .3f) power = 5;
                 flybulletfly.GetComponent<Rigidbody2D>().velocity = flybulletfly.transform.forward * power*10;
                 healthbar.GetComponent<RectTransform>().offsetMax = new Vector3(originalhealthbar, healthbar.GetComponent<RectTransform>().offsetMax.y);
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows--;
                 power = 0;
-
             }
         }
 

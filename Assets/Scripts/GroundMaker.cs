@@ -22,16 +22,17 @@ public class GroundMaker : MonoBehaviour {
         totalGroundDesired = 50;
         do
         {
-            randomUP = Random.Range(-5, 5);
+            randomUP = Random.Range(-.2f, .2f);
 
-            randomRight = Random.Range(5, 20);
+            randomRight = .75f;
             GameObject tempGameObject = Instantiate(prefabGround, parent.transform);
-            randomUP = randomUP / (tempGameObject.transform.localScale.x * 5);
-            randomRight = randomRight / (tempGameObject.transform.localScale.x * 5);
+            
+            
             tempGameObject.transform.position = new Vector3(randomRight + lastright, randomUP + lastup);
             counter = tempGameObject.transform.position.x;
             lastup = tempGameObject.transform.position.y;
             lastright = tempGameObject.transform.position.x;
+            
             GameObject badguy = Instantiate(badguySprite, new Vector2(tempGameObject.transform.position.x, tempGameObject.transform.position.y+2),tempGameObject.transform.rotation);
             if (Random.Range(0, 50) > 1+level)
             {
