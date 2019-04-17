@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 1834219965048910}
   player: {fileID: 0}
+  death: {fileID: 1213426665978982, guid: 7aadcaa6fa033374eb4e9f153bbfa1c6, type: 2}
   arrowdamage: 10
 --- !u!212 &212567992864405118
 SpriteRenderer:

@@ -10,7 +10,8 @@ public class Playercontroller : MonoBehaviour {
     public GameObject healthbar, otherhealhtbar;
     private float power, healthbarMaxSize, originalhealthbar;
     public float poweruprate;
-    
+    public bool canShoot;
+
     // Use this for initialization
     void Start () {
 
@@ -26,6 +27,7 @@ public class Playercontroller : MonoBehaviour {
         moveSlow = moveSpeed / 3;
         duckDistance = -.1f;
         jump = true;
+        canShoot = true;
     }
 	
 	// Update is called once per frame
@@ -66,7 +68,7 @@ public class Playercontroller : MonoBehaviour {
             }
 
             //releaseMouseAndFire
-            if (Input.GetMouseButtonUp(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health>0)
+            if (Input.GetMouseButtonUp(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health>0&&canShoot)
             {
 
                 //Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());

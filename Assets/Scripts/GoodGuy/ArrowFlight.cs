@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowFlight : MonoBehaviour {
-    public GameObject arrow, player;
+    public GameObject arrow, player,death;
     private bool alive=true;
     public float arrowdamage=10;
+    
 	
 	
 	// Update is called once per frame
@@ -32,6 +33,8 @@ public class ArrowFlight : MonoBehaviour {
             //gameObject.transform.rotation = Quaternion.Euler( new Vector3(gameObject.transform.rotation.x,gameObject.transform.rotation.y, rotationholder));
             alive = false;
         }
+        if(collision.collider.CompareTag("BadGuys"))
+            Instantiate(death, gameObject.transform.position, gameObject.transform.rotation);
         if (collision.collider.CompareTag("Player")&&!alive)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows++;

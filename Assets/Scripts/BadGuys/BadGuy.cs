@@ -30,7 +30,7 @@ public class BadGuy : MonoBehaviour {
         if (life < 0)
         {
             Instantiate(gold, gameObject.transform.position, gameObject.transform.rotation);
-            Instantiate(death, gameObject.transform.position,gameObject.transform.rotation);
+            //Instantiate(death, gameObject.transform.position,gameObject.transform.rotation);
             Destroy(gameObject.gameObject);
         }
         if (Physics2D.OverlapCircle(GroundCheck1.position, groundchecksize, groundLayer)) { 
@@ -93,5 +93,5 @@ public class BadGuy : MonoBehaviour {
         }
         
     }
-    
+
 }
