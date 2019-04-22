@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Elevator : MonoBehaviour {
-    public bool goingup, elevater;
+    public bool goingup, elevater,underneath;
     public float originalHight, maxheight, minhieght,speed;
     // Use this for initialization
     void Awake () {
@@ -50,7 +50,20 @@ public class Elevator : MonoBehaviour {
                 }
             }
 
-        }
-        
+        }   
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (elevater)
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (elevater)
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+    }
+
+
+
+
 }

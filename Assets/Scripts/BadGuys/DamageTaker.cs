@@ -19,8 +19,7 @@ public class DamageTaker : MonoBehaviour {
                     
                     break;
                 case "Arm":
-                    gameObject.GetComponentInParent<BadGuy>().life -= collision.collider.GetComponent<ArrowFlight>().arrowdamage / 10;
-                    gameObject.GetComponentInParent<BadGuy>().damageOutput = gameObject.GetComponentInParent<BadGuy>().damageOutput / 2;
+
                     //Instantiate(damage, gameObject.transform.position, gameObject.transform.rotation);
                     
                     break;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GroundMaker : MonoBehaviour {
-    public GameObject prefabGround,parent,checkpoint, badguySprite;
+    public GameObject prefabGround,parent,checkpoint, badguySprite,green,yellow,black;
     public int totalGroundDesired,count,level;
     private float counter,badGuyCounter,lastup, lastright,randomUP, randomRight;
    
@@ -17,7 +17,19 @@ public class GroundMaker : MonoBehaviour {
     
     public void GroundMakerScript()
     {
-        
+        switch (level)
+        {
+            case 1:
+                prefabGround = green;
+                break;
+            case 2:
+                prefabGround = yellow;
+                break;
+            case 3:
+                prefabGround = black;
+                break;
+        }
+
         count = 1;
         totalGroundDesired = 50;
         do
