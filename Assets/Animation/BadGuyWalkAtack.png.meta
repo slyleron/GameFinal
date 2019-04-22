@@ -1,0 +1,551 @@
+fileFormatVersion: 2
+guid: 710b0ae341a0a7e40a149953bf09c0f3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BadGuyWalkAtack_0
+    21300002: BadGuyWalkAtack_1
+    21300004: BadGuyWalkAtack_2
+    21300006: BadGuyWalkAtack_3
+    21300008: BadGuyWalkAtack_4
+    21300010: BadGuyWalkAtack_5
+    21300012: BadGuyWalkAtack_6
+    21300014: BadGuyWalkAtack_7
+    21300016: BadGuyWalkAtack_8
+    21300018: BadGuyWalkAtack_9
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1986
+        width: 1566
+        height: 1441
+      alignment: 9
+      pivot: {x: 0.35641864, y: 0.78745604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423194b9ac3b8bc4585ccbe2b6ef203b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 3412
+        width: 14
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e9d5f0a4561c14da7de82e7fd0dd4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_2
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2009
+        width: 908
+        height: 1483
+      alignment: 9
+      pivot: {x: 0.6116938, y: 0.74865615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8909b8e3094b54e409daa893aa91f4be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_3
+      rect:
+        serializedVersion: 2
+        x: 4148
+        y: 3403
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f8fea1a526b5a42b78f913c7055856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_4
+      rect:
+        serializedVersion: 2
+        x: 3022
+        y: 2005
+        width: 1164
+        height: 1352
+      alignment: 9
+      pivot: {x: 0.72057706, y: 0.824566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01421e701c6f9994782c8b677887aebb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_5
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1455
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39ebc63fe664f04f8ed57f71f62c1d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_6
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 1455
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c8e1b7040676449b513146d3c3ca06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_7
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 48
+        width: 1030
+        height: 1871
+      alignment: 9
+      pivot: {x: 0.5389838, y: 0.5921307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a08917c987da134e95c95a3e4638a15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 58
+        width: 924
+        height: 1351
+      alignment: 9
+      pivot: {x: 0.6461701, y: 0.8245507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdccc9b986d1bfa4d93d381d582eb8d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BadGuyWalkAtack_9
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 78
+        width: 1189
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.7304203, y: 0.8192776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf1fef8b8ef46742909d2ff593727ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 1632.3438, y: 169.58563}
+      - {x: 850.0781, y: -620.1989}
+      - {x: 818.59375, y: -734.06354}
+      - {x: 818.59375, y: -1422.0967}
+      - {x: 1259.375, y: -1710.3922}
+      - {x: 1671.0938, y: -1710.3922}
+      - {x: 1770.3906, y: -1669.2072}
+      - {x: 1855.1562, y: -341.59393}
+      - {x: 1855.1562, y: 167.16298}
+      - {x: 1830.9375, y: 169.58563}
+    - - {x: -2070.7031, y: -341.59393}
+      - {x: -2392.8125, y: -593.54974}
+      - {x: -2443.6719, y: -1036.895}
+      - {x: -2436.4062, y: -1116.8425}
+      - {x: -2320.1562, y: -1126.5332}
+      - {x: -2443.6719, y: -1325.1907}
+      - {x: -2467.8906, y: -1417.2513}
+      - {x: -2467.8906, y: -1661.9392}
+      - {x: -2392.8125, y: -1700.7017}
+      - {x: -1557.2656, y: -1700.7017}
+      - {x: -1535.4688, y: -1557.7653}
+      - {x: -1535.4688, y: -353.70718}
+      - {x: -1574.2188, y: -341.59393}
+    - - {x: 4.84375, y: -1569.8784}
+      - {x: 14.53125, y: -1419.6741}
+      - {x: 4.84375, y: -1569.8784}
+      - {x: 4.84375, y: -1589.2596}
+      - {x: 36.328125, y: -1674.0525}
+      - {x: 237.34375, y: -1674.0525}
+      - {x: 227.65625, y: -1584.4144}
+      - {x: 256.71875, y: -1308.232}
+      - {x: 263.98438, y: -1237.9751}
+      - {x: 326.95312, y: -1121.6879}
+      - {x: 326.95312, y: -341.59393}
+      - {x: -615.15625, y: -341.59393}
+      - {x: -661.1719, y: -356.12982}
+      - {x: -869.4531, y: -658.9613}
+      - {x: -869.4531, y: -1039.3176}
+      - {x: -636.9531, y: -1206.4807}
+      - {x: -440.78125, y: -1187.0995}
+      - {x: -273.67188, y: -1681.3204}
+      - {x: 4.84375, y: -1681.3204}
+      - {x: 21.796875, y: -1671.6299}
+      - {x: 16.953125, y: -1635.29}
+      - {x: 7.265625, y: -1613.4862}
+      - {x: 4.84375, y: -1611.0636}
+    - - {x: -1782.5, y: -1502.0442}
+      - {x: -1787.3438, y: -1487.5083}
+      - {x: -1809.1406, y: -1443.9005}
+      - {x: -1823.6719, y: -1434.21}
+      - {x: -1823.6719, y: -1424.5193}
+      - {x: -1830.9375, y: -1417.2513}
+      - {x: -1838.2031, y: -1417.2513}
+      - {x: -1840.625, y: -1407.5608}
+      - {x: -1818.8281, y: -1429.3646}
+      - {x: -1772.8125, y: -1441.4779}
+      - {x: -1780.0781, y: -1502.0442}
+      - {x: -1777.6562, y: -1506.8895}
+      - {x: -1777.6562, y: -1504.4668}
+    - - {x: 1714.6875, y: -903.6492}
+      - {x: 1721.9531, y: -901.2265}
+      - {x: 1721.9531, y: -893.95856}
+      - {x: 1714.6875, y: -891.5359}
+      - {x: 1709.8438, y: -896.3812}
+    - - {x: -375.39062, y: -809.1658}
+      - {x: -365.70312, y: -806.7431}
+      - {x: -387.5, y: -804.32043}
+      - {x: -389.92188, y: -806.7431}
+    - - {x: -348.75, y: -804.32043}
+      - {x: -358.4375, y: -804.32043}
+    - - {x: 1663.8281, y: -300.40884}
+      - {x: 1663.8281, y: -314.94476}
+      - {x: 1678.3594, y: -314.94476}
+      - {x: 1680.7812, y: -310.09946}
+      - {x: 1680.7812, y: -302.83148}
+      - {x: 1675.9375, y: -300.40884}
+    - - {x: -1576.6406, y: -288.2956}
+      - {x: -1581.4844, y: -293.1409}
+      - {x: -1581.4844, y: -297.98618}
+      - {x: -1576.6406, y: -302.83148}
+      - {x: -1571.7969, y: -302.83148}
+      - {x: -1566.9531, y: -297.98618}
+      - {x: -1566.9531, y: -293.1409}
+      - {x: -1571.7969, y: -288.2956}
+    - - {x: 288.20312, y: -288.2956}
+      - {x: 283.35938, y: -293.1409}
+      - {x: 283.35938, y: -297.98618}
+      - {x: 288.20312, y: -302.83148}
+      - {x: 295.46875, y: -302.83148}
+      - {x: 300.3125, y: -297.98618}
+      - {x: 300.3125, y: -293.1409}
+      - {x: 295.46875, y: -288.2956}
+    - - {x: 1513.6719, y: -249.53316}
+      - {x: 1499.1406, y: -249.53316}
+      - {x: 1499.1406, y: -266.4917}
+      - {x: 1508.8281, y: -285.87292}
+      - {x: 1530.625, y: -285.87292}
+      - {x: 1535.4688, y: -281.02762}
+      - {x: 1535.4688, y: -268.91437}
+    - - {x: -1734.0625, y: 1676.4751}
+      - {x: -1920.5469, y: 1596.5276}
+      - {x: -2005.3125, y: 1378.489}
+      - {x: -1993.2031, y: 1296.1188}
+      - {x: -1985.9375, y: 1293.6962}
+      - {x: -1981.0938, y: 1293.6962}
+      - {x: -1988.3594, y: 1288.8508}
+      - {x: -2247.5, y: 1400.2928}
+      - {x: -2400.0781, y: 1344.5718}
+      - {x: -2429.1406, y: 1034.4724}
+      - {x: -2429.1406, y: 833.3923}
+      - {x: -2426.7188, y: 826.1243}
+      - {x: -2322.5781, y: 826.1243}
+      - {x: -2271.7188, y: 852.7735}
+      - {x: -2177.2656, y: 704.9917}
+      - {x: -2111.875, y: 314.94476}
+      - {x: -1939.9219, y: 244.68785}
+      - {x: -1925.3906, y: 244.68785}
+      - {x: -1908.4375, y: 268.91437}
+      - {x: -1746.1719, y: 227.72928}
+      - {x: -1247.2656, y: 227.72928}
+      - {x: -854.9219, y: 1070.8121}
+      - {x: -854.9219, y: 1676.4751}
+    - - {x: 1656.5625, y: 1167.7183}
+      - {x: 1709.8438, y: 1308.232}
+      - {x: 1709.8438, y: 1354.2625}
+      - {x: 1666.25, y: 1550.4972}
+      - {x: 1620.2344, y: 1606.2183}
+      - {x: 1409.5312, y: 1606.2183}
+      - {x: 1353.8281, y: 1598.9503}
+      - {x: 1261.7969, y: 1439.0553}
+      - {x: 1012.34375, y: 1460.8591}
+      - {x: 537.65625, y: 1460.8591}
+      - {x: 537.65625, y: 1097.4613}
+      - {x: 636.9531, y: 1051.4309}
+      - {x: 699.9219, y: 1053.8536}
+      - {x: 765.3125, y: 1102.3066}
+      - {x: 811.3281, y: 830.9696}
+      - {x: 908.2031, y: 828.54694}
+      - {x: 973.59375, y: 860.04144}
+      - {x: 1237.5781, y: 508.7569}
+      - {x: 1269.0625, y: 302.83148}
+      - {x: 1336.875, y: 247.1105}
+      - {x: 1535.4688, y: 247.1105}
+      - {x: 1649.2969, y: 249.53316}
+      - {x: 1709.8438, y: 770.4033}
+      - {x: 1709.8438, y: 1126.5332}
+      - {x: 1666.25, y: 1167.7183}
+    - - {x: 293.04688, y: 1741.8867}
+      - {x: 41.171875, y: 1741.8867}
+      - {x: -273.67188, y: 1497.1989}
+      - {x: -278.51562, y: 1443.9005}
+      - {x: -532.8125, y: 1346.9945}
+      - {x: -561.875, y: 930.29834}
+      - {x: -561.875, y: 816.4337}
+      - {x: -438.35938, y: 828.54694}
+      - {x: -404.45312, y: 877}
+      - {x: -397.1875, y: 918.18506}
+      - {x: -314.84375, y: 751.0221}
+      - {x: -230.07812, y: 627.46686}
+      - {x: -150.15625, y: 329.48065}
+      - {x: -108.984375, y: 254.37845}
+      - {x: -106.5625, y: 249.53316}
+      - {x: 319.6875, y: 249.53316}
+      - {x: 353.59375, y: 305.25415}
+      - {x: 353.59375, y: 930.29834}
+      - {x: 336.64062, y: 1632.8674}
+    - - {x: 1448.2812, y: 450.61325}
+      - {x: 1411.9531, y: 532.9834}
+      - {x: 1404.6875, y: 540.2514}
+      - {x: 1407.1094, y: 537.82874}
+      - {x: 1416.7969, y: 530.5608}
+      - {x: 1416.7969, y: 523.29285}
+      - {x: 1421.6406, y: 513.60223}
+    - - {x: -249.45312, y: 1334.8812}
+      - {x: -259.14062, y: 1334.8812}
+      - {x: -259.14062, y: 1320.3453}
+      - {x: -217.96875, y: 1288.8508}
+      - {x: -205.85938, y: 1288.8508}
+      - {x: -203.4375, y: 1291.2734}
+      - {x: -203.4375, y: 1300.9641}
+      - {x: -227.65625, y: 1327.6133}
+    - - {x: -196.17188, y: 1305.8094}
+      - {x: -198.59375, y: 1300.9641}
+      - {x: -198.59375, y: 1288.8508}
+      - {x: -157.42188, y: 1288.8508}
+      - {x: -157.42188, y: 1298.5414}
+      - {x: -159.84375, y: 1305.8094}
+    - - {x: -60.546875, y: 1424.5193}
+      - {x: -58.125, y: 1436.6326}
+      - {x: -116.25, y: 1480.2404}
+      - {x: -121.09375, y: 1480.2404}
+      - {x: -118.671875, y: 1477.8176}
+      - {x: -116.25, y: 1480.2404}
+      - {x: -101.71875, y: 1482.663}
+      - {x: -75.078125, y: 1485.0857}
+      - {x: -43.59375, y: 1502.0442}
+      - {x: -58.125, y: 1424.5193}
+      - {x: -62.96875, y: 1419.6741}
+    - - {x: -310, y: 1460.8591}
+      - {x: -317.26562, y: 1458.4365}
+      - {x: -317.26562, y: 1448.7458}
+      - {x: -314.84375, y: 1443.9005}
+      - {x: -283.35938, y: 1443.9005}
+      - {x: -273.67188, y: 1451.1685}
+      - {x: -273.67188, y: 1456.0138}
+      - {x: -278.51562, y: 1460.8591}
+    - - {x: -1535.4688, y: 1545.652}
+      - {x: -1535.4688, y: 1509.3121}
+      - {x: -1528.2031, y: 1502.0442}
+      - {x: -1520.9375, y: 1502.0442}
+      - {x: -1513.6719, y: 1506.8895}
+      - {x: -1513.6719, y: 1526.2708}
+      - {x: -1523.3594, y: 1545.652}
+    - - {x: -1511.25, y: 1611.0636}
+      - {x: -1518.5156, y: 1606.2183}
+      - {x: -1540.3125, y: 1552.9199}
+      - {x: -1533.0469, y: 1545.652}
+      - {x: -1525.7812, y: 1548.0746}
+      - {x: -1503.9844, y: 1596.5276}
+      - {x: -1503.9844, y: 1608.6409}
+    - - {x: -1576.6406, y: 1659.5166}
+      - {x: -1581.4844, y: 1654.6713}
+      - {x: -1581.4844, y: 1649.8259}
+      - {x: -1576.6406, y: 1644.9807}
+      - {x: -1571.7969, y: 1644.9807}
+      - {x: -1566.9531, y: 1649.8259}
+      - {x: -1566.9531, y: 1654.6713}
+      - {x: -1571.7969, y: 1659.5166}
+    - - {x: 1668.6719, y: 1659.5166}
+      - {x: 1663.8281, y: 1654.6713}
+      - {x: 1663.8281, y: 1649.8259}
+      - {x: 1668.6719, y: 1644.9807}
+      - {x: 1675.9375, y: 1644.9807}
+      - {x: 1680.7812, y: 1649.8259}
+      - {x: 1680.7812, y: 1654.6713}
+      - {x: 1675.9375, y: 1659.5166}
+    - - {x: -1411.9531, y: 1695.8563}
+      - {x: -1411.9531, y: 1674.0525}
+      - {x: -1407.1094, y: 1654.6713}
+      - {x: -1390.1562, y: 1654.6713}
+      - {x: -1390.1562, y: 1691.0111}
+      - {x: -1402.2656, y: 1695.8563}
+    physicsShape: []
+    bones: []
+    spriteID: 99eba05274bac5f4a861a7a442c8a953
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
