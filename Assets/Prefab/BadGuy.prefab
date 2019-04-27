@@ -92,7 +92,7 @@ GameObject:
   m_Layer: 0
   m_Name: JumpChecker
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -107,7 +107,7 @@ GameObject:
   m_Layer: 0
   m_Name: GroundChecker
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -507,7 +507,7 @@ MonoBehaviour:
   damageOutput: 0
   level: 1
   gold: {fileID: 1110335155438440, guid: bdc09f32de2f1644b9eca6b4980430ab, type: 2}
-  death: {fileID: 1213426665978982, guid: a1d0123f9c9463c4da5a372fa0b6b6c5, type: 2}
+  death: {fileID: 1213426665978982, guid: 7aadcaa6fa033374eb4e9f153bbfa1c6, type: 2}
   GroundCheck1: {fileID: 4520901244285698}
   jumpCheck: {fileID: 4063544212287016}
   groundLayer:

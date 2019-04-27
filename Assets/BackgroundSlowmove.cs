@@ -11,6 +11,7 @@ public class BackgroundSlowmove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.transform.position=
-	}
+        gameObject.transform.position = new Vector3(GameObject.FindGameObjectWithTag("MainCamera").transform.position.x / 5, GameObject.FindGameObjectWithTag("MainCamera").transform.position.y / 5, 0);
+
+    }
 }
