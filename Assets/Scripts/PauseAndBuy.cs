@@ -9,7 +9,11 @@ public class PauseAndBuy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         timesaver = Time.timeScale;
-	}
+        Time.timeScale = 0;
+        //whatToShow.SetActive(true);
+        whatToShow.transform.position = new Vector3(GameObject.FindGameObjectWithTag("MainCamera").transform.position.x, GameObject.FindGameObjectWithTag("MainCamera").transform.position.y, 0);
+        pause = !pause;
+    }
 	
 	// Update is called once per frame
 	void Update () {

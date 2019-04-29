@@ -7,6 +7,7 @@ public class Playercontroller : MonoBehaviour {
     public float jumphight, moveSpeed, moveSlow,duckDistance;
     private bool jump;
     public GameObject bullet, mouse, bow, player;
+    public ParticleSystem spawnParticles;
     public GameObject healthbar, otherhealhtbar;
     private float power, healthbarMaxSize, originalhealthbar;
     public float poweruprate;
@@ -32,57 +33,60 @@ public class Playercontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.W)&&jump|| Input.GetKey(KeyCode.Space) && jump)
+        if (Time.timeScale > 0)
         {
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x, gameObject.GetComponent<Rigidbody2D>().velocity.y+jumphight);
-            jump = false;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
-        }
-        if (mouse.transform.localPosition.x > gameObject.transform.position.x)
-        {
-             
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
-        //arrowpower
-        if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows > 0)
-        {
-            if (Input.GetMouseButton(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health > 0)
+            if (Input.GetKey(KeyCode.W) && jump || Input.GetKey(KeyCode.Space) && jump)
             {
-
-
-                if (healthbar.GetComponent<RectTransform>().offsetMax.x < otherhealhtbar.GetComponent<RectTransform>().offsetMax.x)
-                {
-                    power += poweruprate;
-                    healthbar.GetComponent<RectTransform>().offsetMax = new Vector3(healthbar.GetComponent<RectTransform>().offsetMax.x + power, healthbar.GetComponent<RectTransform>().offsetMax.y);
-
-                }
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x, gameObject.GetComponent<Rigidbody2D>().velocity.y + jumphight);
+                jump = false;
             }
-
-            //releaseMouseAndFire
-            if (Input.GetMouseButtonUp(0)&& GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health>0&&canShoot)
+            if (Input.GetKey(KeyCode.A))
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            }
+            if (mouse.transform.localPosition.x > gameObject.transform.position.x)
             {
 
-                //Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
-                GameObject flybulletfly = Instantiate(bullet, gameObject.transform.parent);
-                Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), flybulletfly.GetComponent<Collider2D>());
-                Physics2D.IgnoreCollision(flybulletfly.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
-                flybulletfly.transform.LookAt(mouse.transform.localPosition);
-                flybulletfly.transform.position = new Vector3(bow.transform.position.x, bow.transform.position.y, bow.transform.position.z);
-                //print(bow.transform.position.x);
-                if (power < .3f) power = 5;
-                flybulletfly.GetComponent<Rigidbody2D>().velocity = flybulletfly.transform.forward * power*10;
-                healthbar.GetComponent<RectTransform>().offsetMax = new Vector3(originalhealthbar, healthbar.GetComponent<RectTransform>().offsetMax.y);
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows--;
-                power = 0;
+                gameObject.transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+                gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            //arrowpower
+            if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows > 0)
+            {
+                if (Input.GetMouseButton(0) && GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health > 0)
+                {
+
+
+                    if (healthbar.GetComponent<RectTransform>().offsetMax.x < otherhealhtbar.GetComponent<RectTransform>().offsetMax.x)
+                    {
+                        power += poweruprate;
+                        healthbar.GetComponent<RectTransform>().offsetMax = new Vector3(healthbar.GetComponent<RectTransform>().offsetMax.x + power, healthbar.GetComponent<RectTransform>().offsetMax.y);
+
+                    }
+                }
+
+                //releaseMouseAndFire
+                if (Input.GetMouseButtonUp(0) && GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health > 0 && canShoot)
+                {
+
+                    //Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
+                    GameObject flybulletfly = Instantiate(bullet, gameObject.transform.parent);
+                    Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), flybulletfly.GetComponent<Collider2D>());
+                    Physics2D.IgnoreCollision(flybulletfly.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
+                    flybulletfly.transform.LookAt(mouse.transform.localPosition);
+                    flybulletfly.transform.position = new Vector3(bow.transform.position.x, bow.transform.position.y, bow.transform.position.z);
+                    //print(bow.transform.position.x);
+                    if (power < .3f) power = 5;
+                    flybulletfly.GetComponent<Rigidbody2D>().velocity = flybulletfly.transform.forward * power * 10;
+                    healthbar.GetComponent<RectTransform>().offsetMax = new Vector3(originalhealthbar, healthbar.GetComponent<RectTransform>().offsetMax.y);
+                    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().arrows--;
+                    power = 0;
+                }
             }
         }
 
@@ -113,6 +117,7 @@ public class Playercontroller : MonoBehaviour {
             PlayerPrefs.SetFloat("lastCheckpointY", gameObject.transform.position.y);
             PlayerPrefs.SetFloat("lastCheckpointZ", gameObject.transform.position.z);
             GameObject.Find("LevelText").GetComponent < Text >().text= GameObject.Find("GroundPrefabHolder").GetComponent<GroundMaker>().level.ToString();
+            ParticleSystem particles = Instantiate(spawnParticles);
             Destroy(collision.gameObject);
         }
     }

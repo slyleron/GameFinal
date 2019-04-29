@@ -46,7 +46,7 @@ public class GroundMaker : MonoBehaviour {
             lastright = tempGameObject.transform.position.x;
             
             GameObject badguy = Instantiate(badguySprite, new Vector2(tempGameObject.transform.position.x, tempGameObject.transform.position.y+2),tempGameObject.transform.rotation);
-            if (Random.Range(0, 50) > 1+level)
+            if (Random.Range(0, 50) > 5+level)
             {
                 Destroy(badguy.gameObject);
             }

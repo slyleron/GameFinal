@@ -7,7 +7,7 @@ public class HealthAmmoEquip : MonoBehaviour {
     public int health, arrows, mana, gold;
     public GameObject healthbar, healthbarMax;
     public ParticleSystem spawnParticles, deathparticles;
-    public Text goldText,arrowText;
+    public Text goldText,arrowText, arrowTextMenu;
     public float healthMath;
     private bool whichParticle;
 	// Use this for initialization
@@ -28,6 +28,7 @@ public class HealthAmmoEquip : MonoBehaviour {
         goldText.text = gold.ToString();
         gameObject.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y,-50);
         arrowText.text = arrows.ToString();
+        arrowTextMenu.text = arrows.ToString();
         if (health < 1)
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = Vector3.Lerp(GameObject.FindGameObjectWithTag("Player").transform.position, new Vector3(PlayerPrefs.GetFloat("lastCheckpointX"), PlayerPrefs.GetFloat("lastCheckpointY")+1, PlayerPrefs.GetFloat("lastCheckpointZ")), .01f);

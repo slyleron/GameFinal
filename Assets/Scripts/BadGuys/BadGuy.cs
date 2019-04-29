@@ -83,6 +83,7 @@ public class BadGuy : MonoBehaviour {
             else moveRight = true;
 
         }
+        
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -91,7 +92,10 @@ public class BadGuy : MonoBehaviour {
             damageOutput = Random.Range(1, 5) * level;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<HealthAmmoEquip>().health-=damageOutput;
         }
-        
+        else if (collision.CompareTag("BadGuys"))
+        {
+            moveRight = !moveRight;
+        }
     }
 
 }

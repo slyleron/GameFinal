@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: bdf73f8ac8c11b04bbcdc3a5b6eaf053
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MainWalk_0
+    21300002: MainWalk_1
+    21300004: MainWalk_2
+    21300006: MainWalk_3
+    21300008: MainWalk_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +45,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +74,120 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MainWalk_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2156
+        width: 889
+        height: 1088
+      alignment: 9
+      pivot: {x: 0.42789307, y: 0.76891685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda85ad95c9ed6d43a140d130bf5351b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainWalk_1
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2156
+        width: 889
+        height: 1083
+      alignment: 9
+      pivot: {x: 0.42802328, y: 0.7689005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ae7f84ea25fcc4fa805152a0e5491a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainWalk_2
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 2176
+        width: 889
+        height: 1068
+      alignment: 9
+      pivot: {x: 0.4278338, y: 0.76624954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4ce3e256564e748bf840b6bd552df2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainWalk_3
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 2168
+        width: 889
+        height: 1076
+      alignment: 9
+      pivot: {x: 0.42961746, y: 0.76576364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1895d891e48cebe4b9789779fd9fe692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainWalk_4
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 2173
+        width: 891
+        height: 1071
+      alignment: 9
+      pivot: {x: 0.43034512, y: 0.76569337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a0022b0e7a33945886b9d08415bc12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
